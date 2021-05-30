@@ -1,0 +1,329 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    width: 80%;
+    margin: auto;
+}
+.d-flex {
+    display: flex;
+}
+
+/* NAVBAR */
+a.active {
+    text-decoration: underline;
+  }
+  a.is-active {
+    text-decoration: underline;
+  }
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #333;
+    color: #fff;
+    padding: 1rem 9rem;
+  }
+  .navbar > h1 {
+    font-size: 2rem;
+  }
+  .nav-links {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+    width: 30%;
+  }
+  .nav-links > a {
+    color: #925878;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  .nav-link {
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.5rem;
+    font-family: 'Bangers', cursive;
+  }
+  .nav-link:hover {
+    /* color: rgba(191, 191, 191, 0.694); */
+    color: #FD6484;
+  }
+  /* HOME PAGE */
+  .hero-text {
+    display: flex;
+  }
+  .dummy-text {
+    color: #121212;
+    padding: 10rem 10rem;
+  }
+  .dummy-text > h1 {
+    font-size: 4rem;
+    color: #925878;
+  }
+  .dummy-text > p {
+    width: 400px;
+    font-size: 1.5rem;
+    padding-top: 1rem;
+    line-height: 2rem;
+  }
+  .dummy-image img {
+    max-width: 100%;
+  }
+
+  /* PROJECT PAGE */
+  .products-list {
+    background: #F5F5F5;
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
+
+  .card {
+    width: 400px;
+    height: 700px;
+    justify-content: space-between;
+    margin: auto;
+  }
+  .cardImage img {
+    width: 100%;
+  }
+  .cardText > p,
+  .cardText > h1,
+  .cardCheckout > p {
+    text-align: center;
+  }
+  .cardText > h1,
+  .cardText > p {
+    margin-top: .5rem;
+  }
+  /* .cardCheckout {
+    padding-top: 2rem;
+    background: #333333;
+    width: 200px;
+    margin: 1rem auto;
+    color: #fff;
+    border-radius: 0 0 8px 8px;
+  }
+  .cardCheckout > p {
+    position: relative;
+    bottom: 1rem;
+  } */
+
+  .productCard {
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 0 0 5px #ccc;
+    width: 60%;
+    margin: 5rem auto;
+  }
+  .productCard-image > img {
+    width: 60%;
+    margin: 4rem 4rem;
+  }
+  .productCard-text {
+    /* margin-top: 12rem; */
+    /* margin-right: 4rem; */
+    margin: auto 6rem;
+  }
+  .productCard-text > h2 {
+    font-size: 30px;
+    color: #333333;
+  }
+  .productCard-text > h3 {
+    margin-top: .2rem;
+    color: #FD6484;
+  }
+  .productCard-text > p {
+    width: 300px;
+    margin-top: 1rem;
+    font-size: 20px;
+    color: #333333;
+  }
+  .productCard-text > button {
+    width: 80px;
+    height: 30px;
+    border: none;
+    background: #333333;
+    color: #FFFFFF;
+    border-radius: 5px;
+    margin-top: 1rem;
+    cursor: pointer;
+  }
+
+  /* Cart */
+  .cart > h1 {
+    color: #333333;
+    text-align: center;
+    padding-top: 2rem;
+    font-size: 3rem;
+  }
+  .cartTable {
+    border-collapse: collapse;
+    margin: 2rem auto;
+    /* font-size: 0.9em; */
+    font-family: sans-serif;
+    min-width: 900px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  }
+  .cartTable thead tr {
+    background-color: #333333;
+    color: #fff;
+    text-align: center;
+    font-size: 1.1rem;
+  }
+  .cartTable tfoot tr {
+    background-color: #FD6484;
+    color: #fff;
+    text-align: center;
+    font-size: 1.1rem;
+  }
+  th > button {
+    border: none;
+    /* background: lightskyblue; */
+    /* background: blue; */
+    background: cyan;
+    color: #333333;
+    padding: 10px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .cartTable tbody tr {
+    font-size: 1.2rem;
+  }
+  .cartTable th,
+  .cartTable td {
+    padding: 20px 60px;
+    text-align: center;
+  }
+   .cartTable tbody tr {
+    border-bottom: 1px solid #dddddd;
+  } 
+  .imageTable > img {
+    width: 100px;
+  }
+  .buttonsTable > i {
+    color: #FD6484;
+    cursor: pointer;
+    padding: 10px ;
+  }
+
+  .checkoutTable {
+    border-collapse: collapse;
+    margin: 2rem auto;
+    /* font-size: 0.9em; */
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  }
+  .checkoutTable thead tr {
+    background-color: #FD6484;
+    color: #fff;
+    text-align: center;
+    font-size: 1.1rem;
+  }
+  .checkoutTable tbody tr {
+    font-size: 1.2rem;
+  }
+  .checkoutTable th,
+  .checkoutTable td {
+    padding: 20px 60px;
+    text-align: center;
+  }
+
+  .checkoutTable button{
+    width: 100%;
+    height: 30px;
+    border: none;
+    background: #333333;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  /* Login-Register */
+  .loginForm {
+    margin: auto;
+    padding: 150px 150px;
+    background: #333333;
+    color: #fff;
+    border-radius: 8px;
+  }
+  .registerForm {
+    margin: auto;
+    background: #333333;
+    color: #fff;
+    padding: 116px 150px;
+    border-radius: 8px;
+  }
+  .loginForm-inputs,
+  .registerForm-inputs {
+    padding-top: 1rem;
+  }
+  .loginForm-inputs > input {
+    width: 300px;
+    margin: 1rem 2rem;
+    outline: 0;
+    border-width: 0 0 1px;
+    border-color: #fff;
+    background: none;
+    color: #fff;
+    padding: 10px 0;
+  }
+  .registerForm-inputs > input {
+    width: 300px;
+    margin: 1rem 2rem;
+    outline: 0;
+    border-width: 0 0 1px;
+    border-color: #fff;
+    background: none;
+    color: #fff;
+    padding: 10px 0;
+  }
+  .loginForm-inputs > input::placeholder,
+  .registerForm-inputs > input::placeholder {
+    /* color: rgba(51, 51, 51, 1); */
+    color: rgba(255, 255, 255, .4);
+    text-align: left;
+    font-size: 1rem;
+  }
+  .login-register-form {
+    text-align: center;
+    justify-content: space-around;
+    width: 20%;
+    margin: auto;
+    margin-top: 10rem;
+  }
+  .loginForm-button > button,
+  .registerForm-button > button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  .loginForm-button,
+  .registerForm-button {
+    padding-top: 1rem;
+  }
+  .loginForm-button > button,
+  .registerForm-button > button {
+    background: #fff;
+    color: #333333;
+  }
+  .linked {
+    font-size: 1.5rem;
+    color: #FD6484;
+    text-decoration: none;
+  }
+  
+@media (max-width: 1440px) {
+  .nav-links {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+    width: 30%;
+  }
+}
